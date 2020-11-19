@@ -5,6 +5,7 @@ document.getElementById("file-input").addEventListener(
   "change",
   event => {
     fileToBase64(event).then(result => {
+      console.log(result);
       const txt = result.split(",")[1];
       data = txt;
     });
